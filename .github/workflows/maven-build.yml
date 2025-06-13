@@ -24,3 +24,8 @@ jobs:
 #          cache: maven
       - name: Build with Maven Wrapper
         run: ./mvnw -B package
+
+  # Docker Build
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
